@@ -1,0 +1,8 @@
+{
+  "project_ref": "abcdefghijklmnopqrst",
+  "functions_dir": "supabase/functions",
+  "migrations_dir": "supabase/migrations",
+  "verify_jwt": {
+    "stripe-webhook": false
+  }
+}

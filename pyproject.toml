@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "supabase-fn-drift"
+version = "0.1.0"
+description = "Catch drift between deployed Supabase Edge Functions and your repository before a deploy overwrites someone else's work."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Nicola Valigi" }]
+keywords = ["supabase", "edge-functions", "deploy", "drift", "devops"]
+
+[project.urls]
+Homepage = "https://github.com/nicolavaligi/supabase-fn-drift"
+
+[project.scripts]
+sfn = "sfn:main"
+
+[tool.setuptools]
+py-modules = ["sfn"]
